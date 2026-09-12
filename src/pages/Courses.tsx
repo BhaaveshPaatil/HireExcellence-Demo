@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+﻿import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Bookmark, Clock, GraduationCap, PlayCircle, Search } from 'lucide-react'
 import { useApp } from '../context/AppContext'
@@ -107,7 +107,7 @@ function CourseCard({ course, onToggleSave }: { course: CourseType; onToggleSave
   return (
     <Card hover className="group flex flex-col overflow-hidden">
       <Link to={`/learn/${course.id}`} aria-label={`Open ${course.title}`} className="relative block">
-        <div className={`flex h-36 items-center justify-center bg-gradient-to-br ${course.color}`}>
+        <div className={`flex h-36 items-center justify-center ${course.color}`}>
           <GraduationCap className="h-12 w-12 text-white/80" aria-hidden="true" />
           <span className="absolute right-3 top-3 rounded-full bg-white/20 px-2.5 py-1 text-xs font-semibold text-white backdrop-blur">
             {course.level}

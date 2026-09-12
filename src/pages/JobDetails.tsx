@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import {
   ArrowLeft,
@@ -46,7 +46,7 @@ export default function JobDetails() {
       </Link>
 
       <Card className="overflow-hidden">
-        <div className={`h-20 bg-gradient-to-r ${job.logoColor} opacity-90`} aria-hidden="true" />
+        <div className={`h-20 ${job.logoColor} opacity-90`} aria-hidden="true" />
         <div className="px-6 pb-6">
           <div className="-mt-8 flex flex-wrap items-end justify-between gap-4">
             <div className="flex items-end gap-4">
@@ -143,7 +143,7 @@ export default function JobDetails() {
             </div>
           </Card>
 
-          <Card className="bg-gradient-to-br from-indigo-600 to-violet-600 text-white">
+          <Card className="brand-surface text-white">
             <div className="flex flex-col items-center gap-3 p-5 text-center">
               <Briefcase className="h-8 w-8" aria-hidden="true" />
               <p className="text-sm font-medium">This role matches {job.tags.length} of your skills. Your profile is a 92% match.</p>

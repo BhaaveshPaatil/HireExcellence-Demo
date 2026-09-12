@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom'
+﻿import { Link, useNavigate } from 'react-router-dom'
 import {
   ArrowLeft,
   ArrowRight,
@@ -60,7 +60,7 @@ export default function InterviewReport() {
 
       {/* Hero */}
       <Card className="overflow-hidden">
-        <div className="h-2 bg-gradient-to-r from-indigo-500 via-violet-500 to-fuchsia-500" aria-hidden="true" />
+        <div className="h-2 bg-indigo-500" aria-hidden="true" />
         <div className="grid grid-cols-1 gap-8 p-6 sm:p-8 lg:grid-cols-[auto_1fr]">
           <div className="flex items-center gap-6">
             <RadialScore value={report.overallScore} size={140} />

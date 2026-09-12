@@ -22,6 +22,14 @@
 }
 
 @layer utilities {
+  .brand-surface {
+    background-color: #312e81;
+    background-image:
+      radial-gradient(100% 130% at 90% -10%, rgb(255 255 255 / 0.16), transparent 50%),
+      radial-gradient(90% 110% at 0% 100%, rgb(99 102 241 / 0.55), transparent 55%),
+      linear-gradient(155deg, #312e81 0%, #3730a3 55%, #0f172a 120%);
+  }
+
   .scrollbar-thin {
     scrollbar-width: thin;
     scrollbar-color: theme(--color-slate-300) transparent;

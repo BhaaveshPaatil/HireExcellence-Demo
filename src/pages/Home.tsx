@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import { Award, Briefcase, ChevronRight, Flame, TrendingUp } from 'lucide-react'
 import { useApp } from '../context/AppContext'
 import { currentUser, suggestedConnections, trendingTopics } from '../data/mockData'
@@ -28,7 +28,7 @@ export default function Home() {
       <aside className="hidden space-y-4 lg:block">
         <Card>
           <Link to="/profile" className="block">
-            <div className={`h-20 rounded-t-2xl bg-gradient-to-r ${currentUser.bannerColor}`} aria-hidden="true" />
+            <div className={`h-20 rounded-t-2xl ${currentUser.bannerColor}`} aria-hidden="true" />
             <div className="-mt-10 flex flex-col items-center px-4 pb-4">
               <Avatar initials={profile.initials} color={profile.avatarColor} size="xl" alt={profile.name} />
               <h2 className="mt-3 text-lg font-bold text-slate-900">{profile.name}</h2>
@@ -66,7 +66,7 @@ export default function Home() {
 
       {/* Main feed */}
       <section className="space-y-4" aria-label="Your feed">
-        <div className="flex items-center justify-between rounded-2xl border border-indigo-100 bg-gradient-to-r from-indigo-50 to-violet-50 px-4 py-3">
+        <div className="flex items-center justify-between rounded-2xl border border-indigo-100 bg-indigo-50 px-4 py-3">
           <div className="flex items-center gap-3">
             <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white" aria-hidden="true">
               <Flame className="h-5 w-5" />
@@ -129,12 +129,12 @@ export default function Home() {
           <h2 className="px-5 pt-5 text-base font-semibold text-slate-900">Keep learning</h2>
           <div className="space-y-2 p-3">
             {[
-              { title: 'DSA Patterns Bootcamp', progress: 64, color: 'from-indigo-500 to-violet-500' },
-              { title: 'System Design Interview Prep', progress: 12, color: 'from-sky-500 to-teal-400' },
+              { title: 'DSA Patterns Bootcamp', progress: 64, color: 'bg-indigo-600' },
+              { title: 'System Design Interview Prep', progress: 12, color: 'bg-indigo-600' },
             ].map((c) => {
               return (
                 <Link key={c.title} to={c.progress > 35 ? '/learn/c1' : '/learn/c2'} className="block rounded-xl p-2 transition-colors hover:bg-slate-50">
-                  <div className={`h-14 rounded-lg bg-gradient-to-br ${c.color}`} aria-hidden="true" />
+                  <div className={`h-14 rounded-lg ${c.color}`} aria-hidden="true" />
                   <p className="mt-2 text-sm font-semibold text-slate-900">{c.title}</p>
                   <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-slate-100">
                     <div className="h-full rounded-full bg-indigo-500" style={{ width: `${c.progress}%` }} />

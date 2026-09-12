@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   Award,
@@ -106,7 +106,7 @@ export default function PracticeDashboard() {
       </Card>
 
       {nextUp ? (
-        <div className="flex flex-col items-start justify-between gap-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 p-6 text-white sm:flex-row sm:items-center">
+        <div className="flex flex-col items-start justify-between gap-4 rounded-2xl brand-surface p-6 text-white sm:flex-row sm:items-center">
           <div className="flex items-center gap-4">
             <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15" aria-hidden="true">
               <Dumbbell className="h-6 w-6" />

@@ -5,11 +5,7 @@ import { Avatar } from '../ui/Avatar'
 import { Button } from '../ui/Button'
 import { cn } from '../../lib/utils'
 
-const gradients = [
-  'from-indigo-500 via-violet-500 to-fuchsia-500',
-  'from-sky-500 via-cyan-500 to-teal-400',
-  'from-rose-500 via-pink-500 to-fuchsia-500',
-]
+const imageColors = ['bg-indigo-500', 'bg-indigo-600', 'bg-indigo-700']
 
 export function PostComposer() {
   const { user, addPost } = useApp()
@@ -39,7 +35,7 @@ export function PostComposer() {
 
       {image ? (
         <div className="relative mt-3 overflow-hidden rounded-xl">
-          <div className={cn('h-36 w-full bg-gradient-to-br sm:h-44', image)} aria-hidden="true" />
+          <div className={cn('h-36 w-full sm:h-44', image)} aria-hidden="true" />
           <button
             type="button"
             onClick={() => setImage(null)}
@@ -59,7 +55,7 @@ export function PostComposer() {
           <Button
             variant="ghost"
             size="sm"
-            onClick={() => setImage(image ? null : gradients[Math.floor(Math.random() * gradients.length)])}
+            onClick={() => setImage(image ? null : imageColors[Math.floor(Math.random() * imageColors.length)])}
             aria-label="Add image"
           >
             <Image className="h-4 w-4 text-emerald-600" aria-hidden="true" />

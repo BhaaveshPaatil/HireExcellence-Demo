@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import type { FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ArrowLeft, Eye, EyeOff, Lock, Mail, User, UserPlus } from 'lucide-react'
@@ -36,7 +36,7 @@ export default function Register() {
 
   return (
     <div className="grid min-h-dvh lg:grid-cols-2">
-      <div className="relative hidden overflow-hidden bg-gradient-to-br from-fuchsia-700 via-violet-700 to-indigo-700 lg:block">
+      <div className="relative hidden overflow-hidden brand-surface lg:block">
         <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-white/10 blur-3xl" aria-hidden="true" />
         <div className="absolute -bottom-32 -left-16 h-[28rem] w-[28rem] rounded-full bg-white/10 blur-3xl" aria-hidden="true" />
         <div className="relative flex h-full flex-col justify-between p-12 text-white">
@@ -77,7 +77,7 @@ export default function Register() {
           </Link>
 
           <div className="mb-8 lg:hidden">
-            <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-600 to-violet-600 text-white">
+            <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-600 text-white">
               <UserPlus className="h-6 w-6" aria-hidden="true" />
             </span>
             <h2 className="text-2xl font-bold tracking-tight text-slate-900">HireExcellence</h2>

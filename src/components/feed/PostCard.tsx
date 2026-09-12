@@ -48,7 +48,7 @@ export function PostCard({
       <p className="whitespace-pre-line px-4 py-3 text-[15px] leading-relaxed text-slate-800">{post.content}</p>
 
       {post.image ? (
-        <div className={cn('h-44 -mt-1 bg-gradient-to-br sm:h-56', post.image)} aria-hidden="true" />
+        <div className={cn('h-44 -mt-1 sm:h-56', post.image)} aria-hidden="true" />
       ) : null}
 
       <div className="flex items-center justify-between px-4 py-2 text-xs text-slate-500">

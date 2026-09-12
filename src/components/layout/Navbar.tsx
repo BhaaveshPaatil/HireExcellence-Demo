@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import {
   BookOpen,
@@ -42,7 +42,7 @@ export function Navbar() {
     <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur">
       <nav aria-label="Main navigation" className="mx-auto flex h-16 max-w-7xl items-center gap-3 px-4 sm:px-6">
         <Link to="/home" className="flex shrink-0 items-center gap-2" aria-label="HireExcellence home">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-600 to-violet-600 text-white shadow-sm">
+          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-sm">
             <Dumbbell className="h-5 w-5" aria-hidden="true" />
           </span>
           <span className="hidden text-lg font-bold tracking-tight text-slate-900 sm:block">
@@ -151,7 +151,7 @@ export function Navbar() {
           <div className="absolute inset-y-0 right-0 flex w-72 max-w-[85vw] flex-col bg-white shadow-2xl">
             <div className="flex items-center justify-between border-b border-slate-100 px-5 py-4">
               <span className="flex items-center gap-2 font-bold text-slate-900">
-                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-600 to-violet-600 text-white">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-600 text-white">
                   <Dumbbell className="h-4 w-4" aria-hidden="true" />
                 </span>
                 HireExcellence
@@ -199,17 +199,7 @@ export function Navbar() {
   )
 }
 
-function MenuLink({
-  to,
-  icon,
-  label,
-  onClose,
-}: {
-  to: string
-  icon: React.ReactNode
-  label: string
-  onClose: () => void
-}) {
+function MenuLink({ to, icon, label, onClose }: { to: string; icon: React.ReactNode; label: string; onClose: () => void }) {
   return (
     <Link
       to={to}

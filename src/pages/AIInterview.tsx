@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+﻿import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
   AlertCircle,
@@ -170,7 +170,7 @@ export default function AIInterview() {
               </ul>
             </Card>
 
-            <Card className="bg-gradient-to-br from-indigo-600 to-violet-600 p-6 text-white">
+            <Card className="brand-surface p-6 text-white">
               <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:text-left">
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/15" aria-hidden="true">
                   <Headphones className="h-6 w-6" />
@@ -275,7 +275,7 @@ export default function AIInterview() {
         {/* Preview strip */}
         <div className="flex items-center gap-3 border-b border-slate-800 bg-slate-900/60 px-4 py-2.5">
           {camOn ? (
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-violet-500 ring-2 ring-white/20">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-500 ring-2 ring-white/20">
               <span className="text-xs font-bold text-white">{'You'.slice(0, 2).toUpperCase()}</span>
             </span>
           ) : (

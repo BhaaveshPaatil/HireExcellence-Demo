@@ -1,4 +1,4 @@
-import type {
+﻿import type {
   CodingProblem,
   Course,
   FeedSuggestion,
@@ -23,10 +23,10 @@ export const currentUser: Person & {
   stats: { connections: number; followers: number; following: number }
   bannerColor: string
 } = {
-  name: 'Emily Carter',
-  email: 'emily@hirex.dev',
+  name: 'SNAB',
+  email: 'snab@hirex.dev',
   headline: 'Final-year CS Student · Aspiring Full-Stack Engineer',
-  initials: 'EC',
+  initials: 'SN',
   avatarColor: 'bg-indigo-500',
   location: 'San Francisco, CA',
   about:
@@ -82,7 +82,7 @@ export const currentUser: Person & {
     { label: 'Repo stars', value: '1.2k' },
   ],
   stats: { connections: 486, followers: 1204, following: 198 },
-  bannerColor: 'from-indigo-600 via-violet-600 to-fuchsia-500',
+  bannerColor: 'brand-surface',
 }
 
 export const feedPeople: Record<string, Person> = {
@@ -212,7 +212,7 @@ export const jobs: Job[] = [
     posted: '2 days ago',
     applicants: 1284,
     tags: ['Python', 'C++', 'Algorithms', 'Distributed Systems'],
-    logoColor: 'bg-sky-600',
+    logoColor: 'bg-indigo-600',
     about:
       'Google builds products and platforms for billions of users and is looking for curious, self-driven interns to push what is possible.',
     description:
@@ -273,7 +273,7 @@ export const jobs: Job[] = [
     posted: '1 day ago',
     applicants: 356,
     tags: ['SQL', 'Python', 'Pandas', 'Tableau'],
-    logoColor: 'bg-rose-600',
+    logoColor: 'bg-indigo-500',
     about:
       'Craftly is the design collaboration tool used by 2M+ creators. Our analytics team turns raw events into product decisions.',
     description:
@@ -303,7 +303,7 @@ export const jobs: Job[] = [
     posted: '3 days ago',
     applicants: 893,
     tags: ['Node.js', 'React', 'MongoDB', 'REST'],
-    logoColor: 'bg-emerald-600',
+    logoColor: 'bg-indigo-700',
     about:
       'Paymatrix modernizes invoicing for 100k+ SMBs in India. We are hiring fresh graduates to grow into senior engineers.',
     description:
@@ -333,7 +333,7 @@ export const jobs: Job[] = [
     posted: '6 hours ago',
     applicants: 271,
     tags: ['PyTorch', 'NLP', 'Transformers', 'Evaluation'],
-    logoColor: 'bg-violet-600',
+    logoColor: 'bg-indigo-500',
     about:
       'Apollo researches open, explainable language models. We value rigor, transparency, and collaboration across time zones.',
     description:
@@ -363,7 +363,7 @@ export const jobs: Job[] = [
     posted: '4 days ago',
     applicants: 198,
     tags: ['Figma', 'Design Systems', 'UX Research', 'Prototyping'],
-    logoColor: 'bg-amber-600',
+    logoColor: 'bg-indigo-600',
     about:
       'Fenwick designs B2B analytics software used by finance teams at 2k+ companies worldwide.',
     description:
@@ -393,7 +393,7 @@ export const jobs: Job[] = [
     posted: '1 week ago',
     applicants: 620,
     tags: ['Go', 'PostgreSQL', 'Kafka', 'gRPC'],
-    logoColor: 'bg-cyan-600',
+    logoColor: 'bg-indigo-700',
     about:
       'Stackline processes 9B events/day for retail analytics. We hire for potential, not pedigree.',
     description:
@@ -423,7 +423,7 @@ export const jobs: Job[] = [
     posted: '2 days ago',
     applicants: 145,
     tags: ['Writing', 'APIs', 'Community', 'TypeScript'],
-    logoColor: 'bg-teal-600',
+    logoColor: 'bg-indigo-500',
     about:
       'Docsly is a dev-first API documentation platform beloved by 30k+ teams. We are built by engineers who love good docs.',
     description:
@@ -684,7 +684,7 @@ export const courses: Course[] = [
     rating: 4.9,
     students: 48213,
     updatedAt: 'Sep 2026',
-    color: 'from-indigo-500 via-violet-500 to-purple-500',
+    color: 'bg-indigo-500',
     topics: ['Arrays & Hashing', 'Sliding Window', 'Two Pointers', 'Stacks & Queues', 'Binary Search', 'DP', 'Graphs', 'Heaps'],
     instructor: { name: 'Aarav Sharma', headline: 'SWE @ Google', initials: 'AS', avatarColor: 'bg-sky-500' },
     lessons: [
@@ -713,7 +713,7 @@ export const courses: Course[] = [
     rating: 4.8,
     students: 31209,
     updatedAt: 'Aug 2026',
-    color: 'from-sky-500 via-cyan-500 to-teal-400',
+    color: 'bg-indigo-600',
     topics: ['Load Balancers', 'Caching', 'Message Queues', 'Databases', 'CDNs', 'Rate Limiting', 'Microservices'],
     instructor: { name: 'Rohan Mehta', headline: 'SWE Intern @ Stripe', initials: 'RM', avatarColor: 'bg-emerald-500' },
     lessons: [
@@ -742,7 +742,7 @@ export const courses: Course[] = [
     rating: 4.7,
     students: 51982,
     updatedAt: 'Jul 2026',
-    color: 'from-rose-500 via-pink-500 to-fuchsia-500',
+    color: 'bg-indigo-700',
     topics: ['ATS Keywords', 'Resume Bullets', 'LinkedIn SEO', 'Outreach', 'Portfolios'],
     instructor: { name: 'Sofia Reyes', headline: 'Recruiter @ GrowthBee', initials: 'SR', avatarColor: 'bg-teal-500' },
     lessons: [
@@ -767,7 +767,7 @@ export const courses: Course[] = [
     rating: 4.8,
     students: 27640,
     updatedAt: 'Jun 2026',
-    color: 'from-amber-500 via-orange-500 to-rose-500',
+    color: 'bg-indigo-500',
     topics: ['STAR Method', 'Storytelling', 'Leadership', 'Conflict', 'Career Gaps'],
     instructor: { name: 'Priya Patel', headline: 'Founding Engineer @ Scribble', initials: 'PP', avatarColor: 'bg-rose-500' },
     lessons: [
@@ -791,7 +791,7 @@ export const courses: Course[] = [
     rating: 4.9,
     students: 20110,
     updatedAt: 'Sep 2026',
-    color: 'from-emerald-500 via-teal-500 to-cyan-500',
+    color: 'bg-indigo-600',
     topics: ['React Hooks', 'Memoization', 'Rendering', 'Forms', 'Testing', 'Bundle Size'],
     instructor: { name: 'Maya Chen', headline: 'Frontend Engineer @ Vercel', initials: 'MC', avatarColor: 'bg-fuchsia-500' },
     lessons: [
@@ -816,7 +816,7 @@ export const courses: Course[] = [
     rating: 4.8,
     students: 34204,
     updatedAt: 'May 2026',
-    color: 'from-violet-500 via-purple-500 to-indigo-500',
+    color: 'bg-indigo-700',
     topics: ['SELECT', 'Joins', 'Aggregation', 'CTEs', 'Window Functions', 'Indexing'],
     instructor: { name: 'Sneha Iyer', headline: 'MS CS @ Stanford', initials: 'SI', avatarColor: 'bg-violet-500' },
     lessons: [

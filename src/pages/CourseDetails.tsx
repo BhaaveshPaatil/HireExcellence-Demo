@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import {
   ArrowLeft,
@@ -51,7 +51,7 @@ export default function CourseDetails() {
 
       {/* Hero */}
       <Card className="overflow-hidden">
-        <div className={`relative h-40 bg-gradient-to-br sm:h-52 ${course.color}`}>
+        <div className={`relative h-40 brand-surface sm:h-52`}>
           <GraduationCap className="absolute right-6 top-1/2 h-20 w-20 -translate-y-1/2 text-white/30 sm:h-28 sm:w-28" aria-hidden="true" />
           <div className="absolute inset-0 flex items-end">
             <div className="w-full px-6 pb-6 sm:px-8">
@@ -217,7 +217,7 @@ export default function CourseDetails() {
 
         {/* Sidebar */}
         <div className="space-y-5">
-          <Card className="bg-gradient-to-br from-indigo-600 to-violet-600 text-white">
+          <Card className="brand-surface text-white">
             <div className="p-5">
               <h3 className="text-base font-bold">Why students love this course</h3>
               <div className="mt-4 flex items-center gap-2">

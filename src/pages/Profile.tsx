@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import {
   Award,
   Bookmark,
@@ -45,7 +45,7 @@ export default function Profile() {
     <div className="mx-auto max-w-5xl space-y-6">
       {/* Banner + header */}
       <Card className="overflow-hidden">
-        <div className={`h-36 bg-gradient-to-r sm:h-44 ${currentUser.bannerColor}`} aria-hidden="true" />
+        <div className={`h-36 sm:h-44 ${currentUser.bannerColor}`} aria-hidden="true" />
         <div className="px-6 pb-6">
           <div className="-mt-14 flex flex-wrap items-end justify-between gap-4">
             <div className="flex items-end gap-4">

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import type { FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ArrowLeft, Dumbbell, Eye, EyeOff, GraduationCap, Lock, Mail, Sparkles, User } from 'lucide-react'
@@ -9,8 +9,8 @@ import { Button } from '../components/ui/Button'
 export default function Login() {
   const { login } = useApp()
   const navigate = useNavigate()
-  const [name, setName] = useState('Emily Carter')
-  const [email, setEmail] = useState('emily@hirex.dev')
+  const [name, setName] = useState('SNAB')
+  const [email, setEmail] = useState('snab@hirex.dev')
   const [password, setPassword] = useState('hirexcellent')
   const [showPassword, setShowPassword] = useState(false)
   const [error, setError] = useState('')
@@ -35,7 +35,7 @@ export default function Login() {
 
   return (
     <div className="grid min-h-dvh lg:grid-cols-2">
-      <div className="relative hidden overflow-hidden bg-gradient-to-br from-indigo-700 via-violet-700 to-fuchsia-700 lg:block">
+      <div className="relative hidden overflow-hidden brand-surface lg:block">
         <div className="absolute -left-24 -top-24 h-96 w-96 rounded-full bg-white/10 blur-3xl" aria-hidden="true" />
         <div className="absolute -bottom-32 -right-16 h-[28rem] w-[28rem] rounded-full bg-white/10 blur-3xl" aria-hidden="true" />
         <div className="relative flex h-full flex-col justify-between p-12 text-white">
@@ -79,7 +79,7 @@ export default function Login() {
           </Link>
 
           <div className="mb-8 lg:hidden">
-            <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-600 to-violet-600 text-white">
+            <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-600 text-white">
               <Dumbbell className="h-6 w-6" aria-hidden="true" />
             </span>
             <h2 className="text-2xl font-bold tracking-tight text-slate-900">HireExcellence</h2>
@@ -92,7 +92,7 @@ export default function Login() {
             <Input
               id="login-name"
               label="Full name"
-              placeholder="Emily Carter"
+              placeholder="SNAB"
               icon={<User className="h-4 w-4" aria-hidden="true" />}
               value={name}
               onChange={(e) => setName(e.target.value)}
